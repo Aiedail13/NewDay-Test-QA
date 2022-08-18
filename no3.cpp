@@ -8,19 +8,20 @@ int main (){
     int list[n];
 
     for(x=0;x<n;x++){
-        scanf("%d",&list[n]);
-        if (list[n]>first){
+        scanf("%d",&list[x]);
+        if (list[x]>first){
             runner = first;
-            first = list[n];
+            first = list[x];
+            flag=1;
         }
-        else if (list[n]>runner && list[n]!=first){
-            runner = list[n];
+        else if (list[x]>runner && list[x]!=first){
+            runner = list[x];
             flag=1;
         }
     }
 
-	if(flag==1)
-    printf("%d\n",runner);
+    if(flag==1)
+    	printf("%d\n",runner);
     else
 	printf("%d\n",first);
 	
