@@ -12,7 +12,7 @@ int main (){
         if (list[x]>first){
             runner = first;
             first = list[x];
-            flag=1;
+            if(x!=0)flag=1;
         }
         else if (list[x]>runner && list[x]!=first){
             runner = list[x];
