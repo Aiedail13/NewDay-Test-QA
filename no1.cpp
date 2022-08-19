@@ -15,8 +15,8 @@ int main (){
 }
 
 int isLeap (int year){
-    if(year%4 == 0){
-        return 1;
+    if(year%4 != 0){
+        return 0;
     }
     else if(year%100==0){
         if (year%400==0){
@@ -24,4 +24,5 @@ int isLeap (int year){
         }
         else return 0;
     }
+    else return 1;
 }
